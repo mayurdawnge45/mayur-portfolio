@@ -129,14 +129,33 @@ header .bg-light .offcanvas .dropdown-menu{
   font-size: 49px;
   text-align: left;
 }
+.skills-left {
+    display: flex;
+    justify-content: center;
+}
 .typing-demo {
-  width: 240px;
+  width: 267px;
   animation: typing 2.5s steps(20) , blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+}
+a.resume_btn {
+    padding: 15px 20px;
+    background: #ffc773;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.service-right-icon {
+    justify-content: center;
 }
 @keyframes typing {
   from {

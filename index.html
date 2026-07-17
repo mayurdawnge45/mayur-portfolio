@@ -1,397 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
-    <link rel="stylesheet" href="assets/stylesheet/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
-    <script src="assets/script/index.js"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayur Dawange — UI/UX Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Mayur Dawange — freelance UI/UX and web designer crafting delightful, user-centered digital experiences." />
+  <meta property="og:title" content="Mayur Dawange — UI/UX Designer" />
+  <meta property="og:description" content="Freelance UI/UX designer crafting delightful digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
 <body>
-    <header>
-        <nav class="navbar bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">UI/UX </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">UI/UX </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        About
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Project name</a></li>
-                        <li><a class="dropdown-item" href="#">Project name2</a></li>
-                        <!-- <li>
-                          <hr class="dropdown-divider">
-                        </li> -->
-                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                      </ul>
-                    </li>
-                  </ul>                  
-                </div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Mayur.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h4>Hello,</h4>
+        <h1>I'm Mayur Dawange</h1>
+        <div class="role" id="role"></div>
+        <p class="tagline">Start your <b>Design</b> process with the <b>Empathize</b>.</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-illus">
+        <img src="/portfolio/images/banner-pic.svg" alt="Mayur Dawange illustration" class="banner-img" />
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About / Skills ===== -->
+  <section class="skills" id="about">
+    <div class="container skills-inner">
+      <div class="skills-visual reveal">
+        <img src="/portfolio/images/skill-icon.png" alt="Skills" class="skill-img" />
+      </div>
+      <div class="skills-right reveal">
+        <span class="section-tag">About Me</span>
+        <h2>My Best Skills</h2>
+        <p>I'm a passionate UI/UX designer focused on turning complex problems into simple, beautiful, and intuitive interfaces. From wireframes to polished prototypes, I care about every pixel.</p>
+        <div class="skill-bar"><div class="label"><span>UI/UX Design</span><span>95%</span></div><div class="track"><div class="fill" data-value="95"></div></div></div>
+        <div class="skill-bar"><div class="label"><span>Figma & Prototyping</span><span>90%</span></div><div class="track"><div class="fill" data-value="90"></div></div></div>
+        <div class="skill-bar"><div class="label"><span>Web Design (HTML/CSS)</span><span>85%</span></div><div class="track"><div class="fill" data-value="85"></div></div></div>
+        <div class="skill-bar"><div class="label"><span>User Research</span><span>80%</span></div><div class="track"><div class="fill" data-value="80"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">What I Do</span>
+        <h2>Services</h2>
+        <p>End-to-end design services to help your brand stand out and your users delight.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-icon">🎨</div><h3>UI/UX Design</h3><p>Crafting intuitive interfaces backed by user research and thoughtful interaction design.</p></div>
+        <div class="service-card reveal"><div class="service-icon">💻</div><h3>Web Design</h3><p>Modern, responsive websites optimized for performance and conversions.</p></div>
+        <div class="service-card reveal"><div class="service-icon">📱</div><h3>Mobile App Design</h3><p>Native iOS and Android app experiences that feel effortless and look stunning.</p></div>
+        <div class="service-card reveal"><div class="service-icon">🖌️</div><h3>Brand Identity</h3><p>Logos, color systems, and brand guidelines that tell your unique story.</p></div>
+        <div class="service-card reveal"><div class="service-icon">⚡</div><h3>Prototyping</h3><p>Interactive prototypes that let you test ideas before writing a single line of code.</p></div>
+        <div class="service-card reveal"><div class="service-icon">🔍</div><h3>UX Research</h3><p>User interviews, surveys, and usability testing to inform smart product decisions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Recent Work</span>
+        <h2>My Portfolio</h2>
+        <p>A selection of projects I've helped design and ship.</p>
+      </div>
+      <div class="filter reveal">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="ui">UI Design</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="mobile">Mobile</button>
+        <button data-filter="brand">Branding</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item p1 reveal" data-cat="ui" data-title="Finance Dashboard · UI">💳</div>
+        <div class="portfolio-item p2 reveal" data-cat="mobile" data-title="Fitness App · Mobile">🏃</div>
+        <div class="portfolio-item p3 reveal" data-cat="web" data-title="Travel Landing · Web">✈️</div>
+        <div class="portfolio-item p4 reveal" data-cat="brand" data-title="Coffee Brand · Branding">☕</div>
+        <div class="portfolio-item p5 reveal" data-cat="ui" data-title="E-commerce · UI">🛍️</div>
+        <div class="portfolio-item p6 reveal" data-cat="web" data-title="SaaS Website · Web">🚀</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Happy Clients</span>
+        <h2>What People Say</h2>
+        <p>Working with clients and community to deliver experiences that create real impact.</p>
+      </div>
+      <div class="reveal" style="overflow:hidden;">
+        <div class="testimonial-track">
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p>Mayur transformed our clunky app into something our users actually enjoy using. His attention to detail and understanding of UX principles is exceptional.</p>
+              <div class="client">
+                <div class="client-avatar">SA</div>
+                <div class="client-info"><h4>Sarah Anderson</h4><span>Product Manager · Nimbus Tech</span></div>
               </div>
             </div>
-          </nav>
-
-    </header>
-
-
-
-    <div class="container container-section top-banner">
-        <div class="inner-banner row">
-            <div class="left-banner col-lg-6">
-                <h1>Hello,</h1>
-                <h2> I'm Mayur Dawange</h2>
-                <h2 class="typing-demo"><em>UI-UX Designer</em> </h12>
-                    <h2>Start your <strong class="blink">Design</strong> Process: <br> with the <strong
-                            class="blink">Empathize,</strong> </h2>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p>Working with Mayur was a game-changer. He delivered pixel-perfect designs on time and was open to feedback throughout the process. Highly recommended!</p>
+              <div class="client">
+                <div class="client-avatar">JR</div>
+                <div class="client-info"><h4>James Rodriguez</h4><span>Founder · Peakloop Studio</span></div>
+              </div>
             </div>
-            <div class="right-banner col-lg-6">
-                <img src="assets/images/banner-pic.svg" width="100%" alt="">
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p>Our conversion rate jumped 40% after Mayur redesigned our landing page. He truly understands both the design and business sides of things.</p>
+              <div class="client">
+                <div class="client-avatar">PL</div>
+                <div class="client-info"><h4>Priya Lakshmi</h4><span>Marketing Lead · Brightside</span></div>
+              </div>
             </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <div class="quote">"</div>
+              <p>Professional, creative, and communicative. Mayur turned our vague ideas into a polished mobile app design that our whole team loved.</p>
+              <div class="client">
+                <div class="client-avatar">DK</div>
+                <div class="client-info"><h4>Daniel Kim</h4><span>CEO · FitPulse</span></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="dots">
+          <button class="active" aria-label="Slide 1"></button>
+          <button aria-label="Slide 2"></button>
+          <button aria-label="Slide 3"></button>
+          <button aria-label="Slide 4"></button>
+        </div>
+      </div>
     </div>
-    <section class="skill-section">
-        <div class="container heading-section categories-section">
-            <div class="row">
-                <div class="skills-left col-lg-6">
-                    <img src="assets/images/skill-icon.png" alt="">
-                </div>
-                <!-- <div class="col-lg-1"></div> -->
-                <div class="skills-right col-lg-6">
-                    <h2>My Best Skills</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit, amet consectetur .skills-right .skills-right .skills-right </p>
-                </div>
-            </div>
+  </section>
 
-        </div>
-    </section>
-    <section >
-        <div class="container heading-section service-section">
-        <div class="col-lg-12">
-            <h2>Services</h2>
-            <div class="row">
-                <div class="webicon col-lg-6">
-                    <ul>
-                        <li>
-                            <img src="assets/images/ui-ux-design-icon.svg" class="icons" alt="">
-
-                        </li>
-                        <li>
-                            <img src="assets/images/web-design-icon.svg" class="icons" alt="">
-
-                        </li>
-                        <li>
-                            <img src="assets/images/web-design-icon.svg" class="icons" alt="">
-
-                        </li>
-
-                        <li>
-                            <img src="assets/images/web-design-icon.svg" class="icons" alt="">
-
-                        </li>
-                        <li>
-                            <img src="assets/images/web-design-icon.svg" class="icons" alt="">
-
-                        </li>
-                        <li>
-                            <img src="assets/images/web-design-icon.svg" class="icons" alt="">
-
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="service-right-icon col-lg-6">
-                    <img src="assets/images/computer.png" alt="">
-                </div>
-
-            </div>
-        </div>
+  <!-- ===== Blog ===== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Latest Blog</span>
+        <h2>News & Insights</h2>
+        <p>Thoughts on design, process, and building products that matter.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <div class="blog-thumb b1">✏️</div>
+          <div class="blog-body">
+            <span class="date">March 12, 2026</span>
+            <h3>10 UX Principles Every Designer Should Master</h3>
+            <p>From Fitts's Law to Hick's Law — the timeless rules that shape great interfaces.</p>
+            <a href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card reveal">
+          <div class="blog-thumb b2">🎨</div>
+          <div class="blog-body">
+            <span class="date">February 28, 2026</span>
+            <h3>Designing for Dark Mode: Do's & Don'ts</h3>
+            <p>How to build a dark theme that reduces eye strain and looks stunning.</p>
+            <a href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card reveal">
+          <div class="blog-thumb b3">🚀</div>
+          <div class="blog-body">
+            <span class="date">February 10, 2026</span>
+            <h3>From Wireframe to Prototype in Figma</h3>
+            <p>A step-by-step workflow to move faster without cutting corners on quality.</p>
+            <a href="#">Read more →</a>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    </section>
-    <section>
-        <div class="container heading-section client-section">
-            <div class="content-section">
-                <h2>Happy Client</h2>
-                <p class="w-50 m-auto">Working with client and community, we deliver masterplans that create vibrant new
-                    places and spaces, attract people, and encourage investment through.</p>
-            </div>
-            <div class="client-icons">
-                <i class="fab fa-airbnb"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-amazon-pay"></i>
-            </div>
-
-        </div>
-    </section>
-    <section class="skill-section">
-        <div class="container heading-section categories-section">
-            <div class="row">
-                <div class="skills-left col-lg-6">
-                    <img src="assets/images/mansion.png" alt="">
-                </div>
-                <!-- <div class="col-lg-1"></div> -->
-                <div class="skills-right col-lg-6">
-                    <h2>Blog News</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur .skills-right .skills-right .skills-right </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="container heading-section social-m-section">
-            <div class="content-section">
-                <h2>Social Media</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Molestiae esse ullam optio magnam aut</p>
-            </div>
-            <div class="social-icons">
-                <i class="fab fa-instagram">
-                    <p>instagram</p>
-                </i>
-                <i class="fab fa-whatsapp">
-                    <p>whatsapp</p>
-                </i>
-                <i class="fab fa-twitter">
-                    <p>twitter</p>
-                </i>
-                <i class="fab fa-facebook">
-                    <p>facebook</p>
-                </i>
-            </div>
-        </div>
-    </section>
-    <section class="mask-section">
-
-        <div class="container mask-group">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="assets/images/mask-one.png" class="card-img-top" alt="...">
-
-                    </div>
-                </div>
-                <div class="col port-center-card">
-                    <div class="card">
-                        <img src="assets/images/mask-two.png" class="card-img-top" alt="...">
-
-                    </div>
-                </div>
-                <div class="col port-last-card">
-                    <div class="card">
-                        <img src="assets/images/mask-three.png" class="card-img-top" alt="...">
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter-section">
-        <div class="container section heading-section">
-            <div class="row">
-                <div class="content-section col-lg-4">
-                    <h2>Newsletter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Molestiae esse ullam optio magnam aut</p>
-                </div>
-                <div class="input-section col-lg-6">
-                    <input type="text" placeholder="Enter Your mail" class="input-text">
-                </div>
-                <div class="subscribe-link col-lg-2">
-                    <button class="btn btn-primary">Subscirbe Now
-                    </button>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section>
-        <div class="container contact-section">
-            <div class="row">
-                <div class="content-section col-lg-6">
-                    <h2> Get in touch with us!</h2>
-                    <h5> Whether you want to learn about UX or need product design</h5>
-                    <h5> services let us help with your challenge.</h5>
-                    <div class="contact-icon">
-                        <div> <i class="fas fa-phone-square"></i>
-                            <p>+91 93405 35336</p>
-                            <p>+36 20 516 9779</p>
-                        </div>
-                        <div><i class="fas fa-envelope"></i>
-                            <p>hello@uxstudioteam.com</p>
-                            <p>hello@uxstudioteam.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="row needs-validation" novalidate>
-                        <div class="col-md-6">
-                            <label for="validationCustom01" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom02" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">City</label>
-                            <input type="text" class="form-control" id="validationCustom03" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid city.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom04" class="form-label">State</label>
-                            <select class="form-select" id="validationCustom04" required>
-                                <option selected disabled value="">Choose...</option>
-                                <option>...</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Please select a valid state.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom05" class="form-label">E-mail </label>
-                            <input type="text" class="form-control" id="validationCustom05" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid zip.
-                            </div>
-                        </div>
-                        <div class="col-12 mt-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Agree to terms and conditions
-                                </label>
-                                <div class="invalid-feedback">
-                                    You must agree before submitting.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center mt-5">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-    </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="row footer-row">
-                <div class="col-lg-3 mb-3 footer-logo-section">
-                    <h3>
-                        <a href="">About Us</a>
-                    </h3>
-                    <img class="footer-log" src="assets/images/large.png" alt="">
-                </div>
-                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/">Home</a></li>
-                        <li class="mb-2"><a href="">Docs</a></li>
-                        <li class="mb-2"><a href="">Examples</a></li>
-                        <li class="mb-2"><a href="">Themes</a></li>
-                        <li class="mb-2"><a href="">Blog</a></li>
-                        <li class="mb-2"><a href="">Swag Store</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Guides</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="">Getting started</a></li>
-                        <li class="mb-2"><a href="">Starter template</a></li>
-                        <li class="mb-2"><a href="">Webpack</a></li>
-                        <li class="mb-2"><a href="">Parcel</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Projects</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="">Bootstrap 5</a></li>
-                        <li class="mb-2"><a href="">Bootstrap 4</a></li>
-                        <li class="mb-2"><a href="">Icons</a></li>
-                        <li class="mb-2"><a href="">RFS</a></li>
-                        <li class="mb-2"><a href="">npm starter</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Community</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="">Issues</a></li>
-                        <li class="mb-2"><a href="">Discussions</a></li>
-                        <li class="mb-2"><a href="">Corporate sponsors</a></li>
-                        <li class="mb-2"><a href="">Open Collective</a></li>
-                        <li class="mb-2"><a href="">Stack Overflow</a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out for collaborations, freelance projects, or just a friendly hello.</p>
+          <div class="contact-item"><div class="icon">📧</div><div><h4>Email</h4><span>hello@mayurdawange.com</span></div></div>
+          <div class="contact-item"><div class="icon">📞</div><div><h4>Phone</h4><span>+91 98765 43210</span></div></div>
+          <div class="contact-item"><div class="icon">📍</div><div><h4>Location</h4><span>Mumbai, India</span></div></div>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp">Wa</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">Tw</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">Fb</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">In</a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" aria-label="Dribbble">Dr</a>
+          </div>
         </div>
 
-    </footer>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-status" id="formStatus"></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" maxlength="80" />
+              <div class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" maxlength="120" />
+              <div class="form-error"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry" maxlength="120" />
+            <div class="form-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." maxlength="2000"></textarea>
+            <div class="form-error"></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">Mayur.</div>
+      <p>Designing digital experiences with empathy and precision.</p>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Ig</a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener">Wa</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Tw</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">In</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener">Dr</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> Mayur Dawange. All rights reserved. Made with ♥ using HTML, CSS & JS.</div>
+    </div>
+  </footer>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-
+  <script src="./js/script.js"></script>
 </body>
-<script src="./assets/script/index.js">
-
-
-</script>
-
-
 </html>
